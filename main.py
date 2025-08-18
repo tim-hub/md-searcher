@@ -1,13 +1,7 @@
 from fastapi import FastAPI
 
+from adapters.driving import vector_search_controller
+
 app = FastAPI()
 
-
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
+app.include_router(vector_search_controller.router, prefix="/api/v1", tags=["vector_search"])

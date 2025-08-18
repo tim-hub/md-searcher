@@ -12,7 +12,6 @@ Input
 
 
 Output
-- DSL
 - Source Text
 
 
@@ -28,7 +27,7 @@ Port Adapter
   - services (inbound)
     - query_service.py
   - outbound port
-    - markdown_repository_interface.py
+    - source_repository_interface.py
 - adapters
   - inbound
     - query_controller.py

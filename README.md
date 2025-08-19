@@ -1,5 +1,7 @@
 # In Memory Vector Search Demo
 
+> https://github.com/tim-hub/md-searcher
+
 This is a demo project to query on a markdown file
 
 - For now we just used [sample_text.md](adapters/driven/markdown_repository/sample_text.md) as a sample file, this could
@@ -9,7 +11,7 @@ This is a demo project to query on a markdown file
 
 - `uv sync`
 - `uvicorn main:app --reload`
-- visit http://127.0.0.1:8000
+- visit http://127.0.0.1:8000/docs
 
 ## DSL
 
